@@ -26,4 +26,4 @@ Ticket.propTypes = {
   whenTicketClicked: PropTypes.func
 };
 
-export default Ticket;
+export default Bottle;
