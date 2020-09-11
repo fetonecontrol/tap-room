@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 import ReusableForm from "./ReusableForm";
 
 function NewBottleForm(props){
-
   function handleNewBottleFormSubmission(event) {
     event.preventDefault();
     props.onNewBottleCreation({
@@ -13,6 +12,7 @@ function NewBottleForm(props){
       price: event.target.price.value,
       origin: event.target.origin.value,
       tastingNotes: event.target.tastingNotes.value,
+      count: 12,
       id: v4()});
   }
 

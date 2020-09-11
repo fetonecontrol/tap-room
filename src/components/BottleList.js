@@ -13,7 +13,8 @@ function BottleList(props){
         type={bottle.type}
         price={bottle.price}
         origin={bottle.origin}
-        tastingNotes={bottle.origin}
+        tastingNotes={bottle.tastingNotes}
+        count={bottle.count}
         id={bottle.id}
         key={bottle.id}/>
       )}

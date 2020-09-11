@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 
 function EditBottleForm(props){
   const {bottle} = props;
+  const subtractCount = bottle.count -1;
   function handleEditBottleFormSubmission(event){
     event.preventDefault();
     props.onEditBottle({

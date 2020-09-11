@@ -13,6 +13,8 @@ function BottleDetail(props){
       <p>{props.price}</p>
       <p>{props.origin}</p>
       <p>{props.tastingNotes}</p>
+      <p>{props.count}</p>
+      <Button style={{margin: 10}} variant="success" onClick={ props.onClickingEdit }>Sell Shot</Button>
       <Button style={{margin: 10}} variant="success" onClick={ props.onClickingEdit }>Update Bottle</Button>
       <Button variant="danger" onClick={() => onClickingDelete(bottle.id) }>Remove Bottle</Button>
       <hr/>

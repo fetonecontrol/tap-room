@@ -10,6 +10,7 @@ function Bottle(props){
         <p>{props.price}</p>
         <p>{props.origin}</p>
         <p>{props.tastingNotes}</p>
+        <p>{props.count}</p>
         <hr/>
       </div>
     </React.Fragment>
@@ -22,6 +23,7 @@ Bottle.propTypes = {
   price: PropTypes.string,
   origin: PropTypes.string,
   tastingNotes: PropTypes.string,
+  count: PropTypes.number,
   id: PropTypes.string,
   whenBottleClicked: PropTypes.func
 };
