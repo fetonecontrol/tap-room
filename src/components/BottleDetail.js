@@ -27,4 +27,3 @@ BottleDetail.propTypes = {
 };
 
 export default BottleDetail;
-<h1>Bottle Detail</h1>
