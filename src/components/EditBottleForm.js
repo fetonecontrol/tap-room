@@ -1,13 +1,12 @@
 import React from "react";
-import { v4 } from 'uuid';
-import PropTypes from "prop-types";
 import ReusableForm from "./ReusableForm";
+import PropTypes from "prop-types";
 
-function NewBottleForm(props){
-
-  function handleNewBottleFormSubmission(event) {
+function EditBottleForm(props){
+  const {bottle} = props;
+  function handleEditBottleFormSubmission(event){
     event.preventDefault();
-    props.onNewBottleCreation({
+    props.onEditBottle({
       name: event.target.name.value,
       type: event.target.type.value,
       price: event.target.price.value,
@@ -17,15 +16,15 @@ function NewBottleForm(props){
 
   return (
     <React.Fragment>
-      <ReusableForm
-      formSubmissionHandler={handleNewBottleFormSubmission}
-      buttonText="Help!" />
+      <ReusableForm 
+        formSubmissionHandler={handleEditBottleFormSubmission}
+        buttonText="Update Bottle" />
     </React.Fragment>
   );
 }
 
-NewBottleForm.propTypes = {
-  onNewBottleCreation: PropTypes.func
+EditBottleForm.propTypes = {
+  onEditBottle: PropTypes.func
 };
 
-export default NewBottleForm;
+export default EditBottleForm;

@@ -7,7 +7,12 @@ function BottleDetail(props){
   return (
     <React.Fragment>
       <h1>Bottle Detail</h1>
-
+      <p>{props.name}</p>
+      <p>{props.type}</p>
+      <p>{props.price}</p>
+      <p>{props.origin}</p>
+      <p>{props.tastingNotes}</p>
+      <hr/>
       <button onClick={ props.onClickingEdit }>Update Bottle</button>
       <button onClick={() => onClickingDelete(bottle.id) }>Remove Bottle</button>
       <hr/>

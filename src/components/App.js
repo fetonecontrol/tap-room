@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./Header";
+import NavBar from "./NavBar";
 import BottleControl from "./BottleControl";
 
 function App(){
