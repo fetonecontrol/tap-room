@@ -16,14 +16,14 @@ function Bottle(props){
   );
 }
 
-Ticket.propTypes = {
+Bottle.propTypes = {
   name: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   price: PropTypes.string,
   origin: PropTypes.string,
   tastingNotes: PropTypes.string,
   id: PropTypes.string,
-  whenTicketClicked: PropTypes.func
+  whenBottleClicked: PropTypes.func
 };
 
 export default Bottle;

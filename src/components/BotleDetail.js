@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Button from "react-bootstrap/Button";
 
 function BottleDetail(props){
   const { bottle, onClickingDelete } = props;
@@ -12,9 +13,8 @@ function BottleDetail(props){
       <p>{props.price}</p>
       <p>{props.origin}</p>
       <p>{props.tastingNotes}</p>
-      <hr/>
-      <button onClick={ props.onClickingEdit }>Update Bottle</button>
-      <button onClick={() => onClickingDelete(bottle.id) }>Remove Bottle</button>
+      <Button style={{margin: 10}} variant="success" onClick={ props.onClickingEdit }>Update Bottle</Button>
+      <Button variant="danger" onClick={() => onClickingDelete(bottle.id) }>Remove Bottle</Button>
       <hr/>
     </React.Fragment>
   );
@@ -27,3 +27,4 @@ BottleDetail.propTypes = {
 };
 
 export default BottleDetail;
+<h1>Bottle Detail</h1>

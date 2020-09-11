@@ -11,7 +11,8 @@ function EditBottleForm(props){
       type: event.target.type.value,
       price: event.target.price.value,
       origin: event.target.origin.value,
-      tastingNotes: event.target.tastingNotes.value, id: v4()});
+      tastingNotes: event.target.tastingNotes.value,
+      id: bottle.id});
   }
 
   return (
