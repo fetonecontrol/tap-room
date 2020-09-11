@@ -11,7 +11,7 @@ function NewBottleForm(props){
       name: event.target.name.value,
       type: event.target.type.value,
       price: event.target.price.value,
-      // origin: event.target.origin.value,
+      origin: event.target.origin.value,
       tastingNotes: event.target.tastingNotes.value,
       id: v4()});
   }
@@ -20,7 +20,7 @@ function NewBottleForm(props){
     <React.Fragment>
       <ReusableForm
       formSubmissionHandler={handleNewBottleFormSubmission}
-      buttonText="Help!" />
+      buttonText="Add!" />
     </React.Fragment>
   );
 }

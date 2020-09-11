@@ -19,7 +19,7 @@ function ReusableForm(props) {
           placeholder='Price' />
         <input
           type='text'
-          name='Origin'
+          name='origin'
           placeholder='Origin' />
         <input
           type='text'
