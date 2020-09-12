@@ -1,26 +1,27 @@
-import React from "react";
-import ReusableForm from "./ReusableForm";
-import PropTypes from "prop-types";
+// import React from "react";
+// import PropTypes from "prop-types";
+// import ReusableButton from "./JustAbutton";
 
-function Subtract(props){
-  const {bottle} = props;
-  const subtractCount = bottle.count -1;
-  function handleSubtractFormSubmission(event){
-    event.preventDefault();
-    props.onSellShot({
-      count: subtractCount,
-      id: bottle.id});
-  }
-  return (
-    <React.Fragment>
-      <ReusableForm 
-        formSubmissionHandler={handleSubtractFormSubmission}
-        buttonText="Sell Shot" />
-    </React.Fragment>
-  );
-}
-Subtract.propTypes = {
-  onSellShot: PropTypes.func
-};
+// function SellShot(props){
+//   const {bottle} = props;
+//   const subtractCount = bottle.count -1;
+//   function handleSubtractFormSubmission(event){
+//     event.preventDefault();
+//     props.onEditBottle({
+//       count: subtractCount,
+//       id: bottle.id});
+//   }
 
-export default Subtract;
+//   return (
+//     <React.Fragment>
+//       <ReusableButton
+//         formSubmissionHandler={handleSubtractFormSubmission}
+//         buttonText="Sell Shot" />
+//     </React.Fragment>
+//   );
+// }
+// SellShot.propTypes = {
+//   onSellShot: PropTypes.func
+// };
+
+// export default SellShot;

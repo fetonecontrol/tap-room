@@ -67,6 +67,17 @@ class BottleControl extends React.Component {
       selectedBottle: null
     });
   }
+  handleSellingShot(shotToSell){
+    const editedMasterBottleList = this.state.masterBottleList
+    .filter(bottle => bottle.id !== this.state.selectedBottle.id)
+    .concat(shotToSell);
+    const subtractCount = shotToSell.count -1;
+  this.setState({
+        masterBottleList: editedMasterBottleList,
+        count: subtractCount,
+    });
+}
+  
 
   render(){
     let currentlyVisibleState = null;
@@ -79,6 +90,7 @@ class BottleControl extends React.Component {
     } else if (this.state.selectedBottle != null) {
         currentlyVisibleState = <BottleDetail 
           bottle = {this.state.selectedBottle} 
+          onClickingSell = {this.handleSellingShot}
           onClickingDelete = {this.handleDeletingBottle} 
           onClickingEdit = {this.handleEditClick} />
         buttonText = "Return to Bottle List";

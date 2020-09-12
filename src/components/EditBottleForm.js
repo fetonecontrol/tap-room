@@ -13,6 +13,7 @@ function EditBottleForm(props){
       price: event.target.price.value,
       origin: event.target.origin.value,
       tastingNotes: event.target.tastingNotes.value,
+      count: subtractCount,
       id: bottle.id});
   }
 

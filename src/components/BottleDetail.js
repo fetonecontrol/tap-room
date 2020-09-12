@@ -1,9 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
+// import SellShot from "./SellShot";
 import Button from "react-bootstrap/Button";
 
 function BottleDetail(props){
-  const { bottle, onClickingDelete } = props;
+  const { bottle, onClickingDelete, onClickingSell } = props;
 
   return (
     <React.Fragment>
@@ -14,8 +15,8 @@ function BottleDetail(props){
       <p>{props.origin}</p>
       <p>{props.tastingNotes}</p>
       <p>{props.count}</p>
-      <Button style={{margin: 10}} variant="success" onClick={ props.onClickingEdit }>Sell Shot</Button>
       <Button style={{margin: 10}} variant="success" onClick={ props.onClickingEdit }>Update Bottle</Button>
+      <Button variant="danger" onClick={() => onClickingSell(bottle.id) }>Sell Shot</Button>
       <Button variant="danger" onClick={() => onClickingDelete(bottle.id) }>Remove Bottle</Button>
       <hr/>
     </React.Fragment>
