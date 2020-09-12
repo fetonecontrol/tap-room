@@ -67,16 +67,17 @@ class BottleControl extends React.Component {
       selectedBottle: null
     });
   }
-  handleSellingShot = (shotToSell) => {
+  handleSellingShot = (bottleToSell) => {
     const editedMasterBottleList = this.state.masterBottleList
     .filter(bottle => bottle.id !== this.state.selectedBottle.id)
-    .concat(shotToSell);
+    .concat(bottleToSell);
     const subtractCount = this.state.selectedBottle.count -1;
-  this.setState({
-        masterBottleList: editedMasterBottleList,
-        count: subtractCount,
-        selectedBottle: null
+    this.setState({
+      masterBottleList: editedMasterBottleList,
+      count: subtractCount,
+      selectedBottle: null
     });
+    console.log(subtractCount);
 }
   
 
