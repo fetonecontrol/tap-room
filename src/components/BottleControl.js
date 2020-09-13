@@ -72,12 +72,13 @@ class BottleControl extends React.Component {
     .filter(bottle => bottle.id !== this.state.selectedBottle.id)
     .concat(bottleToSell);
     const subtractCount = this.state.selectedBottle.count -1;
+    console.log(subtractCount);
     this.setState({
       masterBottleList: editedMasterBottleList,
       count: subtractCount,
+      editing: false,
       selectedBottle: null
     });
-    console.log(subtractCount);
 }
   
 
@@ -90,8 +91,8 @@ class BottleControl extends React.Component {
       onEditBottle = {this.handleEditingBottleInList} />
       buttonText = "Return to Bottle List";
     } else if (this.state.selectedBottle != null) {
-        currentlyVisibleState = <BottleDetail 
-          bottle = {this.state.selectedBottle} 
+      currentlyVisibleState = <BottleDetail 
+      bottle = {this.state.selectedBottle} 
           onClickingSell = {this.handleSellingShot}
           onClickingDelete = {this.handleDeletingBottle} 
           onClickingEdit = {this.handleEditClick} />
