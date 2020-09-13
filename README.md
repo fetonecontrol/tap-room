@@ -54,17 +54,21 @@ _Allows uses to log bottle inventory for a bar, and sell a shot of selected inve
 | ** 1. User inputs name, type, price, origin, and tasting notes for a bottle. |"Johny Walke blue, Islay Scotch, 180.00, Scotland, moss, smoke, flinty coastal air"| "Johny Walke blue, Islay Scotch, 180.00, Scotland, moss, smoke, flinty coastal air" |
 | ** 2. User may click sell shot from details page, and decriment avaiable shots, by 1. Product by default starts at 12" | click | Shots left : 11 |
 
+## `React Component tree`
+
+![Commponent Tree](./help-queue/Component.jpg/)
+
 ## `Setup/Installation Requirements`
 
 * _Clone or download this repository located at https://github.com/fetonecontrol/tap-room
 * _Open in your code editor of choice_
 * _Run $ "npm install"_
 
-## Known Bugs
+## `Known Bugs`
 
 _No known bugs_
 
-## Support and contact details
+## `Support and contact details`
 
 _{Please contact Frederick Ernest for any support issues.}_
 
