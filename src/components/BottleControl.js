@@ -74,6 +74,12 @@ class BottleControl extends React.Component {
     console.log(bottleToSell2);
     const subtractCount = this.state.selectedBottle.count -1;
     const bottleToAdd = {
+      name: this.state.selectedBottle.name, 
+      type: this.state.selectedBottle.type,
+      price: this.state.selectedBottle.price,
+      origin: this.state.selectedBottle.origin,
+      tastingNotes: this.state.selectedBottle.tastingNotes,
+      id: this.state.selectedBottle.id,
       count: subtractCount };
     console.log(bottleToAdd);
     const editedMasterBottleList = this.state.masterBottleList
