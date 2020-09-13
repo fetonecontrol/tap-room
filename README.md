@@ -37,32 +37,43 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## `tap-room`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### _tap-room, 9/10/2020_
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### By _**Frederick Ernest**_
 
-### Code Splitting
+## `Description`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+_Allows uses to log bottle inventory for a bar, and sell a shot of selected inventory_
 
-### Analyzing the Bundle Size
+## `Behaviors`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+| Spec | Input | Output |
+| :-------------      | :------------- | :------------- |
+| ** 1. User inputs name, type, price, origin, and tasting notes for a bottle. |"Johny Walke blue, Islay Scotch, 180.00, Scotland, moss, smoke, flinty coastal air"| "Johny Walke blue, Islay Scotch, 180.00, Scotland, moss, smoke, flinty coastal air" |
+| ** 2. User may click sell shot from details page, and decriment avaiable shots, by 1. Product by default starts at 12" | click | Shots left : 11 |
 
-### Making a Progressive Web App
+## `Setup/Installation Requirements`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+* _Clone or download this repository located at https://github.com/fetonecontrol/tap-room
+* _Open in your code editor of choice_
+* _Run $ "npm install"_
 
-### Advanced Configuration
+## Known Bugs
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+_No known bugs_
 
-### Deployment
+## Support and contact details
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+_{Please contact Frederick Ernest for any support issues.}_
 
-### `npm run build` fails to minify
+## Technologies Used
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* _GitHub_
+* _JavaScript_
+* _React_
+
+### License
+
+*Copyright (c) 2020 **_Frederick Ernest MIT License_**
