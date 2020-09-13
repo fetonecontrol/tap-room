@@ -72,7 +72,7 @@ class BottleControl extends React.Component {
     const bottleToSell2 = this.state.masterBottleList
     .filter(bottle => bottle.id === this.state.selectedBottle.id)
     console.log(bottleToSell2);
-    const subtractCount = this.state.selectedBottle.count -1;
+    const subtractCount = this.state.selectedBottle.count -12;
     const bottleToAdd = {
       name: this.state.selectedBottle.name, 
       type: this.state.selectedBottle.type,
