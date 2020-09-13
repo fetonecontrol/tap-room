@@ -4,18 +4,18 @@
 
 // function SellShot(props){
 //   const {bottle} = props;
-//   const subtractCount = bottle.count -1;
-//   function handleSubtractFormSubmission(event){
+//   const subtract = bottle.count -1;
+//   function handlesellShotFormSubmission(event){
 //     event.preventDefault();
 //     props.onEditBottle({
-//       count: subtractCount,
+//       count : subtract,
 //       id: bottle.id});
 //   }
 
 //   return (
 //     <React.Fragment>
 //       <ReusableButton
-//         formSubmissionHandler={handleSubtractFormSubmission}
+//         formSubmissionHandler={handlesellShotFormSubmission}
 //         buttonText="Sell Shot" />
 //     </React.Fragment>
 //   );

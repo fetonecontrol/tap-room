@@ -3,6 +3,7 @@ import NewBottleForm from "./NewBottleForm";
 import BottleList from "./BottleList";
 import BottleDetail from "./BottleDetail";
 import EditBottleForm from './EditBottleForm';
+// import SellShot from './SellShot';
 import Button from 'react-bootstrap/Button';
 
 class BottleControl extends React.Component {
@@ -67,35 +68,41 @@ class BottleControl extends React.Component {
       selectedBottle: null
     });
   }
-  handleSellingShot = (bottleToSell) => {
+  handleSellingShot = () => {
+    const bottleToSell2 = this.state.masterBottleList
+    .filter(bottle => bottle.id === this.state.selectedBottle.id)
+    console.log(bottleToSell2);
+    const subtractCount = this.state.selectedBottle.count -1;
+    const bottleToAdd = {
+      count: subtractCount };
+    console.log(bottleToAdd);
     const editedMasterBottleList = this.state.masterBottleList
     .filter(bottle => bottle.id !== this.state.selectedBottle.id)
-    .concat(bottleToSell);
-    const subtractCount = this.state.selectedBottle.count -1;
+    .concat(bottleToAdd);
     console.log(subtractCount);
     this.setState({
       masterBottleList: editedMasterBottleList,
-      count: subtractCount,
       editing: false,
       selectedBottle: null
     });
-}
+  }
   
 
   render(){
     let currentlyVisibleState = null;
     let buttonText = null;
     if (this.state.editing ) {      
-      currentlyVisibleState = <EditBottleForm
+      currentlyVisibleState = 
+      <EditBottleForm
       bottle = {this.state.selectedBottle}
       onEditBottle = {this.handleEditingBottleInList} />
       buttonText = "Return to Bottle List";
     } else if (this.state.selectedBottle != null) {
       currentlyVisibleState = <BottleDetail 
       bottle = {this.state.selectedBottle} 
-          onClickingSell = {this.handleSellingShot}
-          onClickingDelete = {this.handleDeletingBottle} 
-          onClickingEdit = {this.handleEditClick} />
+        onClickingSell = {this.handleSellingShot}
+        onClickingDelete = {this.handleDeletingBottle} 
+        onClickingEdit = {this.handleEditClick} />
         buttonText = "Return to Bottle List";
     } else if (this.state.formVisibleOnPage) {
         currentlyVisibleState = <NewBottleForm onNewBottleCreation={this.handleAddingNewBottleToList} />

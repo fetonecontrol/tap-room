@@ -18,8 +18,8 @@ function Bottle(props){
 }
 
 Bottle.propTypes = {
-  name: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
+  name: PropTypes.string,
+  type: PropTypes.string,
   price: PropTypes.string,
   origin: PropTypes.string,
   tastingNotes: PropTypes.string,
