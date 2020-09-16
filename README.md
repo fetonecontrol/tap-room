@@ -1,3 +1,49 @@
+
+## `tap-room`
+
+#### _tap-room, 9/10/2020_
+
+#### By _**Frederick Ernest**_
+
+## `Description`
+
+_Allows uses to log bottle inventory for a bar, and sell a shot of selected inventory_
+
+## `Behaviors`
+
+| Spec | Input | Output |
+| :-------------      | :------------- | :------------- |
+| ** 1. User inputs name, type, price, origin, and tasting notes for a bottle. |"Johny Walke blue, Islay Scotch, 180.00, Scotland, moss, smoke, flinty coastal air"| "Johny Walke blue, Islay Scotch, 180.00, Scotland, moss, smoke, flinty coastal air" |
+| ** 2. User may click sell shot from details page, and decriment avaiable shots, by 1. Product by default starts at 12" | click | Shots left : 11 |
+
+## `React Component tree`
+
+![Commponent Tree](./Component.jpg)
+
+## `Setup/Installation Requirements`
+
+* _Clone or download this repository located at https://github.com/fetonecontrol/tap-room
+* _Open in your code editor of choice_
+* _Run $ "npm install"_
+
+## `Known Bugs`
+
+_No known bugs_
+
+## `Support and contact details`
+
+_{Please contact Frederick Ernest for any support issues.}_
+
+## Technologies Used
+
+* _GitHub_
+* _JavaScript_
+* _React_
+
+### License
+
+*Copyright (c) 2020 **_Frederick Ernest MIT License_**
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -36,48 +82,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## `tap-room`
-
-#### _tap-room, 9/10/2020_
-
-#### By _**Frederick Ernest**_
-
-## `Description`
-
-_Allows uses to log bottle inventory for a bar, and sell a shot of selected inventory_
-
-## `Behaviors`
-
-| Spec | Input | Output |
-| :-------------      | :------------- | :------------- |
-| ** 1. User inputs name, type, price, origin, and tasting notes for a bottle. |"Johny Walke blue, Islay Scotch, 180.00, Scotland, moss, smoke, flinty coastal air"| "Johny Walke blue, Islay Scotch, 180.00, Scotland, moss, smoke, flinty coastal air" |
-| ** 2. User may click sell shot from details page, and decriment avaiable shots, by 1. Product by default starts at 12" | click | Shots left : 11 |
-
-## `React Component tree`
-
-![Commponent Tree](./help-queue/Component.jpg/)
-
-## `Setup/Installation Requirements`
-
-* _Clone or download this repository located at https://github.com/fetonecontrol/tap-room
-* _Open in your code editor of choice_
-* _Run $ "npm install"_
-
-## `Known Bugs`
-
-_No known bugs_
-
-## `Support and contact details`
-
-_{Please contact Frederick Ernest for any support issues.}_
-
-## Technologies Used
-
-* _GitHub_
-* _JavaScript_
-* _React_
-
-### License
-
-*Copyright (c) 2020 **_Frederick Ernest MIT License_**
