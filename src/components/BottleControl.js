@@ -19,7 +19,6 @@ class BottleControl extends React.Component {
   }
   
   handleEditClick = () => {
-    console.log("handleEditClick reached!");
     this.setState({editing: true});
   }
 
@@ -71,7 +70,6 @@ class BottleControl extends React.Component {
   handleSellingShot = () => {
     const bottleToSell2 = this.state.masterBottleList
     .filter(bottle => bottle.id === this.state.selectedBottle.id)
-    console.log(bottleToSell2);
     const subtractCount = this.state.selectedBottle.count -12;
     const bottleToAdd = {
       name: this.state.selectedBottle.name, 
@@ -81,11 +79,9 @@ class BottleControl extends React.Component {
       tastingNotes: this.state.selectedBottle.tastingNotes,
       id: this.state.selectedBottle.id,
       count: subtractCount };
-    console.log(bottleToAdd);
     const editedMasterBottleList = this.state.masterBottleList
     .filter(bottle => bottle.id !== this.state.selectedBottle.id)
     .concat(bottleToAdd);
-    console.log(subtractCount);
     this.setState({
       masterBottleList: editedMasterBottleList,
       editing: false,
